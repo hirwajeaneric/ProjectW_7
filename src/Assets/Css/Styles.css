@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MENU HEADER*/
+.menu {
+    list-style-type: none;
+
+}
+
+.menu li {
+    
+}
+
+/*GALLERY*/
+
+
+/*ABOUT*/
+
+@media (max-width: 1050px){
+
+}
+
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 799px){
+
+}
+
+@media (max-width: 600px){
+
+}
