@@ -38,6 +38,12 @@ body {
 }
 */
 
+.navigation a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
 /*GALLERY*/
 
 
