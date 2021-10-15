@@ -1,0 +1,182 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MENU HEADER*/
+
+.header-section {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1500px;
+
+    background: white;
+}
+
+.menu-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 24px;
+    overflow: hidden;
+}
+
+.menu-ul li {
+    float: left;
+}
+
+.menu-ul li a {
+    font-size: 24px;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-ul li a:hover {
+    background-color: gray;
+}
+
+/*GALLERY*/
+.header-section .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.header-section .gallery img {
+    width: 50%;
+}
+
+/*ABOUT*/
+.about {
+    text-align: center;
+    /*width: ;*/
+    margin-right: auto;
+    margin-left: auto;
+    padding: 70px;
+    background-color: rgb(225, 225, 225);
+}
+
+.about h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.about img {
+    margin-bottom: 40px;
+}
+
+.about .text {
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    font-weight: 200;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about h2 {
+    color: rgb(255, 71, 255);
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+form {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+form input[type="text"] {
+    margin-bottom: 20px;
+    display: block;
+    padding: 12px 16px;
+    border: solid 2px rgb(181, 181, 181);
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input[type="button"] {
+    display: block;
+    padding: 12px 16px;
+    border: none;
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+form input[type="button"]:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+.copyrights {
+    margin-bottom: 20px;
+}
+
+
+
+/*RESPONSIVENESS.*/
+
+@media (max-width: 600px){
+    
+    .menu-ul {
+        padding: 20px 10px 20px 10px;
+    }
+    
+    .menu-ul li a {
+        font-size: 20px;
+    }
+
+    /*GALLERY*/
+    .header-section .gallery img {
+        width: 100%;
+    }
+    
+    /*ABOUT*/
+    .about {
+        padding: 70px 20px 40px 20px;
+    }
+    
+    .about img {
+        margin-bottom: 40px;
+    }
+    
+    .about .text {
+        width: 75%;
+        font-size: 95%;
+    }
+    
+    .about h2 {
+        font-size: 18px;
+    }
+    
+    form {
+        max-width: 75%;
+    }
+    
+    form input[type="text"] {
+        border: solid 1px gray;
+    }
+    
+    .copyrights {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
