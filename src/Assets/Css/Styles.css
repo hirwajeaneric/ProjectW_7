@@ -1,4 +1,5 @@
-* {
+*, ::before, ::after {
+    box-sizing: inherit;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -10,37 +11,50 @@ body {
 }
 
 /*MENU HEADER*/
-/*
-.menu {
-    list-style-type: none;
 
-}
-
-.menu li {
+header {
     box-sizing: border-box;
-    float: left;
+    display: block;
+    /*Nova*/
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1500px;
+
+    background: white;
+    padding: 30px;
 }
 
-.menu a{
-    text-decoration: none;
-    color: black;
-    font-size: 150%;
-    font-weight: 300;
-    padding: 8px 12px;
+/*
+header ::before {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.menu a:hover {
-    background-color: gray;
-}
-
-.menu .about-link {
-    
+header ::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 */
 
-.navigation a {
-    list-style-type: none;
+header a {
+    color: black;
     text-decoration: none;
+    font-size: 24px;
+    padding: 12px 16px;
+}
+
+header a:hover {
+    background-color: gray;
+}
+
+header .button1 {
+    float: right; /*Nova*/
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 
