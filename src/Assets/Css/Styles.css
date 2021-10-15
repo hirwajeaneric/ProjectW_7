@@ -1,11 +1,12 @@
-*, ::before, ::after {
+* {
     box-sizing: inherit;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(255, 255, 255);
     padding: 0;
     box-sizing: border-box;
 }
@@ -47,7 +48,6 @@ body {
 
 /*GALLERY*/
 .header-section .gallery {
-    max-width: ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,24 +59,124 @@ body {
 }
 
 /*ABOUT*/
-
-
-
-
-
-
-@media (max-width: 1050px){
-
+.about {
+    text-align: center;
+    /*width: ;*/
+    margin-right: auto;
+    margin-left: auto;
+    padding: 70px;
+    background-color: rgb(225, 225, 225);
 }
 
-@media (max-width: 991px){
-
+.about h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
 }
 
-@media (max-width: 799px){
-
+.about img {
+    margin-bottom: 40px;
 }
+
+.about .text {
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    font-weight: 200;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about h2 {
+    color: rgb(255, 71, 255);
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+form {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+form input[type="text"] {
+    margin-bottom: 20px;
+    display: block;
+    padding: 12px 16px;
+    border: solid 2px rgb(181, 181, 181);
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input[type="button"] {
+    display: block;
+    padding: 12px 16px;
+    border: none;
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+form input[type="button"]:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+.copyrights {
+    margin-bottom: 20px;
+}
+
+
+
+/*RESPONSIVENESS.*/
 
 @media (max-width: 600px){
+    
+    .menu-ul {
+        padding: 20px 10px 20px 10px;
+    }
+    
+    .menu-ul li a {
+        font-size: 20px;
+    }
 
+    /*GALLERY*/
+    .header-section .gallery img {
+        width: 100%;
+    }
+    
+    /*ABOUT*/
+    .about {
+        padding: 70px 20px 40px 20px;
+    }
+    
+    .about img {
+        margin-bottom: 40px;
+    }
+    
+    .about .text {
+        width: 75%;
+        font-size: 95%;
+    }
+    
+    .about h2 {
+        font-size: 18px;
+    }
+    
+    form {
+        max-width: 75%;
+    }
+    
+    form input[type="text"] {
+        border: solid 1px gray;
+    }
+    
+    .copyrights {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
